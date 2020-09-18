@@ -1,10 +1,11 @@
 ##                                            Yolo Coin
 
-This is a coin detection and sorting neural net using YOLOV3 deep neural net trained with kenya's currency custom dataset.
+Coin detection and sorting using YOLOV3 deep neural net trained with kenya's currency custom dataset.
 
 ##                                        Getting Started
 
 This folowing have been used in the project setup;
+
         1. Yolo Implementation source code
 
         - Compile the source code using the provided CMake configuration file
