@@ -6,8 +6,12 @@
 #define LOADINGYOLO_YOLO_H
 
 #include <iostream>
-#include <opencv2/opencv.hpp>
 #include <fstream>
+#include <opencv2/core.hpp>
+#include <opencv2/highgui.hpp>
+#include <opencv2/imgproc.hpp>
+#include <opencv2/videoio.hpp>
+#include <opencv2/dnn.hpp>
 
 using namespace cv;
 using namespace std;
@@ -18,8 +22,6 @@ private:
     float confThreshold = 0.5;// confidence threshold for first stage processing
     float nmsThreshold = 0.4;//non-maximum suppression to remove the overlapping boxes
     std::vector<std::string> classes; // class names
-    int inpWidth = 416;// input width
-    int inpHeight = 416;// input height
     std::string classNameFile  = "../data/coco.names";// class names
     std::string modelCfg = "../data/yolov3.cfg";// model config file
     std::string modelWeights = "../data/yolov3.weights";// pre-trained model
@@ -27,6 +29,9 @@ private:
     std::string  window_name = "Darknet Object Detection";
     dnn::Net net = dnn::readNetFromDarknet(modelCfg, modelWeights);
 public:
+    int inpWidth = 416;// input width
+    int inpHeight = 416;// input height
+
     bool loadYoloNet();
     void handleImage(std::string filePath);
     void handleVideo(std::string filePath, int id = 0);

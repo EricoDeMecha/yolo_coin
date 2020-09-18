@@ -2,6 +2,7 @@
 /build
 /img
 /.idea
+/data
 /data/yolov3.cfg
 /data/yolov3.weights
 /data/coco.names

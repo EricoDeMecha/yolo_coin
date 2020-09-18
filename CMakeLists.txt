@@ -9,5 +9,5 @@ if(OpenCV_FOUND)
     include_directories(${OpenCV_INCLUDE_DIRS})
 endif()
 
-add_executable(${PROJECT_NAME} ${SOURCE_FILES})
-target_link_libraries(${PROJECT_NAME} ${OpenCV_LIBS})
+add_executable(runYolo.bin ${SOURCE_FILES})
+target_link_libraries(runYolo.bin ${OpenCV_LIBS})
