@@ -1,0 +1,7 @@
+/cmake-build-debug
+/build
+/img
+/.idea
+/data/yolov3.cfg
+/data/yolov3.weights
+/data/coco.names
