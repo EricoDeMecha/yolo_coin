@@ -6,12 +6,12 @@ Coin detection and sorting using YOLOV3 deep neural net trained with kenya's cur
 
 This folowing have been used in the project setup;
 
-        1. Yolo Implementation source code
+   1. Yolo Implementation source code
 
         - Compile the source code using the provided CMake configuration file
         - With the output  executable name set to  "runYolo.bin", use the following commands as is.
 
-        2. RaspividYUV
+   2. RaspividYUV
 
         - Captures video frames at the  highest fps possible.
         - Installation guide is found in the following link [RaspividYUV](https://github.com/circpeoria/raspividYUV)
