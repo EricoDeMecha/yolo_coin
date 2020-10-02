@@ -1,9 +1,11 @@
 cmake_minimum_required(VERSION 3.10.2)
 project(pc)
 
+set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -pthread")
+
 set(OpenCV_DIR /home/openqt/cv3/OpenCV-3.4/lib/cmake/opencv4)
 
-set(SOURCE_FILES ${CMAKE_SOURCE_DIR}/main.cpp coin.h fps.cpp videoStream.cpp)
+set(SOURCE_FILES ${CMAKE_SOURCE_DIR}/main.cpp )
 
 find_package(OpenCV REQUIRED)
 if(OpenCV_FOUND)
