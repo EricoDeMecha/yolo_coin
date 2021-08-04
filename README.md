@@ -1,11 +1,36 @@
-## COIN DETECTION AND SORTING
-This is coin detection and sorting using deep neural net (OpenCVDNN).
-I have already implemented one using YOLOV3 for the pi. Yolo models trained with kenya's currency custom
-dataset will soon be available.
-There are also plans to use SSD MobileNet to compare speeds and pick the best.
+## Coin Detection and Sorting
+Coin detection and sorting using YOLOV3 deep neural net.
 
-### Project Setup
-1. High Video Frames Capture.
+# Usage
 
-- Pi: I have used RaspividYUV for video frames capturing
-- PC : I am currently working on cross-platform multithreaded video frames capturing.
+* Clone the repo
+    ```bash
+        git clone https://github.com/EricoDeMecha/yolo_coin.git
+     ```
+* PC - working in a linux environment
+    * Build and install opencv4.1 using this [bashscript](https://github.com/EricoDeMecha/yolo_coin/blob/master/pc/install_opencv4.sh)
+    ```bash
+        cd yolo_coin/pc && chmod +x install_opencv4.sh && ./install_opencv4.sh
+    ```
+    This will download opencv, and all its dependencies, build, and install them
+
+    * Build project
+    ```bash
+        mkdir build &&  cmake .. && make
+    ```
+    * Executin the binary
+    ```
+      ./pc --help
+    ```
+    This will list an example usage of the program
+
+* PI 
+
+    **Similar to pc**  Different only in implementation
+
+## Contributions 
+
+**Required**
+
+- Porting the application to use SSD MobileNet
+- Generating of models different from kenyan currency
