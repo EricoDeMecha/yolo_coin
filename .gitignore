@@ -1,13 +1,1 @@
-/cmake-build-debug
-/.idea
-
-/pi/cmake-build-debug
-/pi/img
-/pi/.idea
-/pi/data
-/pi/data/yolov3.cfg
-/pi/data/yolov3.weights
-/pi/data/coco.names
-
-/pc/cmake-build-debug
-/pc/.idea
+./build

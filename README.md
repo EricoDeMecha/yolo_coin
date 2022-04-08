@@ -1,36 +1,23 @@
 ## Coin Detection and Sorting
 Coin detection and sorting using YOLOV3 deep neural net.
 
-# Usage
+### Dependencies
+- OpenCV4.1.2 
+- OpenCV transistive dependencies  - *include in the build script*
 
-* Clone the repo
-    ```bash
-        git clone https://github.com/EricoDeMecha/yolo_coin.git
-     ```
-* PC - working in a linux environment
-    * Build and install opencv4.1 using this [bashscript](https://github.com/EricoDeMecha/yolo_coin/blob/master/pc/install_opencv4.sh)
-    ```bash
-        cd yolo_coin/pc && chmod +x install_opencv4.sh && ./install_opencv4.sh
-    ```
-    This will download opencv, and all its dependencies, build, and install them
+**The project's dependencies are managed by conan**
+- install conan
+```bash
+pip install --user conan
+```
 
-    * Build project
-    ```bash
-        mkdir build &&  cmake .. && make
-    ```
-    * Executin the binary
-    ```
-      ./pc --help
-    ```
-    This will list an example usage of the program
+### Usage
 
-* PI 
+There is an assistive build script for building the application
+```bash
+chmod +x build.sh && ./build.sh
+```
 
-    **Similar to pc**  Different only in implementation
+### Plan
 
-## Contributions 
-
-**Required**
-
-- Porting the application to use SSD MobileNet
-- Generating of models different from kenyan currency
+- Port the application to use SSD MobileNet

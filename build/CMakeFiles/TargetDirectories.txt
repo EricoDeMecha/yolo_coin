@@ -1,0 +1,3 @@
+/home/erico/Documents/c++/yolo_coin/build/CMakeFiles/yolo_coin.dir
+/home/erico/Documents/c++/yolo_coin/build/CMakeFiles/edit_cache.dir
+/home/erico/Documents/c++/yolo_coin/build/CMakeFiles/rebuild_cache.dir
