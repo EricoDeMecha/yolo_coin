@@ -1,4 +1,5 @@
 # install dependencies
+: <<'END'
 sudo apt -y update 
 sudo apt -y install libgtk2.0-dev
 sudo apt -y install libva-dev
@@ -14,7 +15,7 @@ sudo apt -y install xtrans-dev libxcb-render0-dev libxcb-render-util0-dev libxcb
 sudo apt -y install libxcb-icccm4-dev libxcb-image0-dev libxcb-keysyms1-dev libxcb-randr0-dev 
 sudo apt -y install libxcb-shape0-dev libxcb-sync-dev libxcb-xfixes0-dev libxcb-xinerama0-dev
 sudo apt -y install xkb-data libxcb-dri3-dev uuid-dev libxcb-util-dev
-
+END
 # build application
 rm -rf build
 mkdir build && cd build

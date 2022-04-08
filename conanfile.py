@@ -56,7 +56,7 @@ class OpenCVConan(ConanFile):
         "shared": False,
         "fPIC": True,
         "parallel": False,
-        "contrib": False,
+        "contrib": True,
         "contrib_freetype": False,
         "contrib_sfm": False,
         "with_ipp": False,
