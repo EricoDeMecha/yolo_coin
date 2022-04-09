@@ -1,42 +1,8 @@
 [requires]
-    ade/0.1.1f
-    eigen/3.Y.Z
-    ffmpeg/4.Y.Z
-    gtk/system
-    jasper/2.Y.Z
-    libjpeg/9d
-    libpng/1.Y.Z
-    libtiff/4.Y.Z
-    libwebp/1.Y.Z
-    openexr/2.Y.Z
-    protobuf/3.Y.Z
-    quirc/1.Y.Z
-    zlib/1.Y.Z
+opencv/4.1.2
 
 [options]
-    contrib=False
-    cpu_baseline=None
-    cpu_dispatch=None
-    dnn=True
-    nonfree=False
-    parallel=False
-    shared=True
-    with_ade=True
-    with_cuda=False
-    with_eigen=True
-    with_ffmpeg=True
-    with_gtk=True
-    with_imgcodec_hdr=False
-    with_imgcodec_pfm=False
-    with_imgcodec_pxm=False
-    with_imgcodec_sunraster=False
-    with_ipp=False
-    with_jpeg=libjpeg
-    with_jpeg2000=jasper
-    with_openexr=True
-    with_png=True
-    with_quirc=True
-    with_tiff=True
-    with_v4l=False
-    with_webp=True
+opencv:contrib=True
 
+[generators]
+cmake
